@@ -31,4 +31,9 @@ public class GestorTareas {
     public List<Tarea> getTareas() {
         return tareas;
     }
+    import java.util.Comparator;
+
+    public void ordenarPorPrioridad() {
+    tareas.sort(Comparator.comparingInt(Tarea::getPrioridad));
+  }
 }
